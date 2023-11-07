@@ -1,0 +1,25 @@
+.container{
+    width: 90vw;
+    height:90vh;
+    display: grid;
+    gap:5px;
+    grid-template-columns: 0.7fr 3fr 1.5fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+}
+
+.header,.nav,.contents,.aside,.footer{
+    background-color: #4f7e64;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

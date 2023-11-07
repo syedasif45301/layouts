@@ -1,0 +1,128 @@
+/* .container{
+    display: grid;
+    gap:15px;
+    width: 90vw;
+    height:90vh;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+}
+
+.left, .header, .main, .right, .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.left{
+    background-color: #ff67e6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* padding: 20px; */
+    /* gap:20px; 
+}
+.innerl{
+    width:200px;
+    height:200px;
+    border:1px solid black;
+}
+
+.header{
+    background-color: #5af7ff;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display:flex;
+}
+.innerh{
+    width: 200px;
+    height:200px;
+    border:1px solid black;
+    margin:10px;
+}
+.main{
+    background-color: #edcf62;
+    grid-row-start: 2;
+    display:flex;
+    /* flex-direction: column; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:20px;
+    gap:20px;
+    
+}
+.innerm{
+    width:200px;
+    height:180px;
+    border:1px solid black;
+}
+
+.right{
+    background-color: #ff8c20;
+    grid-row-start: 2;
+}
+.footer{
+    background-color: #3943ff;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+ } */
+
+.container{
+    display: grid;
+    width:90vh;
+    height:80vh;
+    grid-template-columns: 0.5fr 1fr 0.33fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap:10px
+
+}
+.left,.header,.main.right,.footer{
+    padding:10px
+}
+.left{
+    background-color: #7afef3;
+    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.innerl{
+    width:168px;
+    height:168px;
+    border:1px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    
+}
+.header{
+    background-color: #a2ff4b;
+    grid-column: span 2;
+    display: flex;
+    gap:10px
+}
+.innerh{
+    width:168px;
+    height:168px;
+    border:1px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    
+}
+.main{
+    background-color: #5d22ff;
+}
+.right{
+    background-color: #ff19d9;
+}
+.footer{
+    background-color: #ffad32;
+    grid-column: span 2;
+}
